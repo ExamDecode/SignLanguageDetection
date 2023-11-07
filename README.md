@@ -8,13 +8,13 @@ System requirement to run this program:
 
 ## Steps to run this code:
 1. Create a new python virtual Environment:
-   conda create -n sign python=3.7 -y
+   - conda create -n sign python=3.7 -y
    
 3. Activate that new environment:
-   conda activate sign
+   - conda activate sign
    
 4. install all required packages:
-   pip install -r requirements.txt
+   - pip install -r requirements.txt
    
 6. Finally run this command in command prompt:
-   python app.py
+   - python app.py
