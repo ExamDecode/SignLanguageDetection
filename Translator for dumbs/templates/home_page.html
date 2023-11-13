@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Language Detection</title>
+    <link rel="stylesheet" href="../static/css/home_page.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <link rel="icon" href="../static/images/favicon.ico" />
+  </head>
+
+  <body>
+    <div id="home_page_header">
+      <div id="library_menu_icon" class="menu-library-icon">
+        <button class="home_page_header_buttons">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div id="library_menu_tooltrip">MENU</div>
+      </div>
+
+      <div id="home_page_menuSlider">
+        <div id="home_page_closeMenu">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <div class="home_page_slider_contents">
+          <a href="#">USER</a>
+          <a href="#">HISTORY</a>
+          <a href="#">LOG OUT</a>
+        </div>
+      </div>
+
+      <h1>SIGN LANGUAGE DETECTION</h1>
+
+      <div class="menu-library-icon">
+        <button class="home_page_header_buttons">
+          <i class="fa-solid fa-book"></i>
+        </button>
+
+        <div id="library_menu_tooltrip" style="color: #94b9ff">LIBRARY</div>
+      </div>
+    </div>
+
+    <div id="home_page_body">
+      <div class="home_page_body_left_side">
+        <div class="body_container_head">UPLOAD YOUR MEDIA</div>
+
+        <div class="body_container_body" id="body_container_body_left_side">
+          <button id="uploadVideoBtn" onclick="uploadMedia('video')">
+            Upload Video
+          </button>
+
+          <button id="uploadImageBtn" onclick="uploadMedia('image')">
+            Upload Image
+          </button>
+
+          <div id="body_container_body_left_side_mediaBox">
+            <button id="upload_media_removeBtn" onclick="removeMedia()">
+              <!-- <i class="fa-solid fa-xmark fa-fade"></i> -->
+              Remove
+            </button>
+            <button id="upload_media_submitBtn">
+              <!-- <i class="fa-solid fa-xmark fa-fade"></i> -->
+              Submit
+            </button>
+            <div id="body_container_body_left_side_mediaDisplay"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="home_page_body_right_side">
+        <div class="body_container_head">GET YOUR RESULT!</div>
+        <div class="body_container_body">
+          <p class="body_container_body_result">OUTPUT DATA</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="home_page_footer">
+      <p>&copy; 2023 EXAM DECODE. All rights reserved.</p>
+    </div>
+
+    <script src="../static/js/home_page.js"></script>
+  </body>
+</html>
