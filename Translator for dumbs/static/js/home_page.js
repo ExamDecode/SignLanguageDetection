@@ -1,8 +1,9 @@
+/////  Menu Slider  /////
+
 document
   .getElementById("library_menu_icon")
   .addEventListener("click", function () {
     document.getElementById("home_page_menuSlider").style.left = "0";
-    //   document.getElementById("library_menu_icon").style.display = "none";
   });
 
 document
@@ -11,6 +12,8 @@ document
     document.getElementById("home_page_menuSlider").style.left = "-180px";
     document.getElementById("library_menu_icon").style.display = "block";
   });
+
+/////  Upload Media  /////
 
 function uploadMedia(type) {
   var input = document.createElement("input");
@@ -29,7 +32,6 @@ function uploadMedia(type) {
     );
     var uploadVideoBtn = document.getElementById("uploadVideoBtn");
     var uploadImageBtn = document.getElementById("uploadImageBtn");
-    // var bgImageBtn = document.getElementById("body_container_body_left_side");
 
     var file = input.files[0];
     var fileType = file.type;
@@ -57,7 +59,6 @@ function uploadMedia(type) {
       upload_media_removeBtn.style.display = "block";
       uploadVideoBtn.style.display = "none";
       uploadImageBtn.style.display = "none";
-      // bgImageBtn.style.display = "none";
       // Show the media box
       body_container_body_left_side_mediaBox.style.display = "block";
     };
@@ -100,6 +101,8 @@ function uploadMedia(type) {
   input.click();
 }
 
+/////  Checking Dimensions of the Video  /////
+
 function checkVideoDimensions(file) {
   return new Promise((resolve, reject) => {
     var video = document.createElement("video");
@@ -115,13 +118,11 @@ function checkVideoDimensions(file) {
       }
     };
 
-    // video.onerror = function () {
-    //   reject("Error loading the video.");
-    // };
-
     video.src = URL.createObjectURL(file);
   });
 }
+
+/////  Remove Media  /////
 
 function removeMedia() {
   var body_container_body_left_side_mediaBox = document.getElementById(
@@ -134,7 +135,6 @@ function removeMedia() {
   document.getElementById("upload_media_removeBtn").style.display = "none";
   uploadVideoBtn.style.display = "block";
   uploadImageBtn.style.display = "block";
-  // bgImageBtn.style.display = "none";
 
   // Hide the media box
   body_container_body_left_side_mediaBox.style.display = "none";
