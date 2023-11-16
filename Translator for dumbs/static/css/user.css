@@ -1,0 +1,138 @@
+/* ********************  Fonts  ******************** */
+
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@500&family=Righteous&family=Roboto+Slab:wght@700&family=Rubik+Spray+Paint&display=swap');
+
+/* ********************  Body  ******************** */
+
+body {
+    align-items: center;
+    background: linear-gradient(to right, #CBFDD9, #94B9FF);
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* ********************  Since most of the design is similar to the Home page, we have linked the Home page CSS to this Library HTML file. By doing this we were able to reduce many lines of code. You may not find many classes in this Library CSS file, but you will find them in the Home Page CSS file.  ******************** */
+
+/* User Page Header */
+
+/* Check the Home page CSS file */
+
+/* User Page Body */
+
+#home_page_body {
+    display: block;
+}
+
+.user_form {
+    display: flex;
+    padding: 0px 50px;
+}
+
+#user_image_upload {
+    text-align: center;
+    width: 30%;
+}
+
+#user_image_container {
+    border: none;
+    height: 270px;
+    margin-top: 122.5px;
+    margin-left: 40px;
+    overflow: hidden;
+    width: 270px;
+}
+
+#user_uploaded_image {
+    border-radius: 50%;
+    border: 3px solid black;
+    height: 83%;
+    object-fit: cover;
+    overflow: hidden;
+    width: 83%;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#user_user-details {
+    padding: 40px 40px 40px 0px;
+    width: 65%;
+}
+
+.details {
+    background-color: rgb(203, 253, 217);
+    border-radius: 20px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    width: 100%;
+}
+
+#bio {
+    height: 170px;
+}
+
+textarea {
+    height: 80px;
+    border: none;
+}
+
+.user_save_reset {
+    display: flex;
+}
+
+#user_submit_btn,
+#user_reset_btn,
+#user_choose_image_btn {
+    background: linear-gradient(to top, #000000, #94B9FF);
+    border-radius: 25px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+    color: #CBFDD9;
+    cursor: pointer;
+    font-family: 'Righteous', cursive;
+    font-size: 16px;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-left: 17.5%;
+    padding: 10px 40px;
+    width: 25%;
+}
+
+#user_choose_image_btn {
+    margin-top: 0%;
+    margin-left: 0%;
+    padding: 5px 10px;
+    position: relative;
+}
+
+#user_reset_btn {
+    background: linear-gradient(to bottom, #000000, #94B9FF);
+    color: #CBFDD9;
+}
+
+#user_submit_btn:hover {
+    background: #CBFDD9;
+    color: #000000;
+}
+
+#user_reset_btn:hover {
+    background: #CBFDD9;
+    color: #000000;
+}
+
+#user_choose_image_btn:hover {
+    background: #CBFDD9;
+    color: #000000;
+}
+
+/* User Page Footer */
+
+/* Check the Home page CSS file */

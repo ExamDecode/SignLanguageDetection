@@ -1,0 +1,60 @@
+/* ********************  Fonts  ******************** */
+
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@500&family=Righteous&family=Roboto+Slab:wght@700&family=Rubik+Spray+Paint&display=swap');
+
+/* ********************  Body  ******************** */
+
+body {
+    align-items: center;
+    background: linear-gradient(to right, #CBFDD9, #94B9FF);
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* ********************  Since most of the design is similar to the Home page, we have linked the Home page CSS to this Library HTML file. By doing this we were able to reduce many lines of code. You may not find many classes in this Library CSS file, but you will find them in the Home Page CSS file.  ******************** */
+
+/* Library Page Header */
+
+/* Check the Home page CSS file */
+
+/* Library Page Body */
+
+#home_page_body {
+    height: 555px;
+    margin-top: 3.5%;
+
+}
+
+.body_container_head {
+    height: 5%;
+    margin: 10px 90px;
+    /* width: %; */
+    padding: 12px 220px;
+}
+
+.body_container_body {
+    height: 63%;
+    margin-top: 5%;
+    width: 88%;
+    position: absolute;
+}
+
+#library_imageContainer {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+#library_imageContainer img {
+    width: 100%;
+    height: 99%;
+    display: block;
+    margin: 0px;
+}
+
+/* Library Page Footer */
+
+/* Check the Home page CSS file */
