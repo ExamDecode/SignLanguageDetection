@@ -1,0 +1,92 @@
+/* ********************  Fonts  ******************** */
+
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@500&family=Righteous&family=Roboto+Slab:wght@700&family=Rubik+Spray+Paint&display=swap');
+
+/* ********************  Since most of the design is similar to the Home page, we have linked the Home page CSS to this History HTML file. By doing this we were able to reduce many lines of code. You may not find many classes in this History CSS file, but you will find them in the Home Page CSS file.  ******************** */
+/* History Page Header */
+
+#history_page_header {
+    background: linear-gradient(to bottom, #CBFDD9, #94B9FF);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    height: 40px;
+    width:100%;
+    z-index: 1000;
+}
+#history_page_header h1 {
+    font-family: 'Caprasimo', cursive;
+    margin: 0;
+    text-align: center;
+    word-spacing: 8px;
+}
+/* Check the Home page CSS file */
+
+/* History Page Body */
+
+#history_page_body {
+    background-color: #94B9FF;
+    border-radius: 25px;
+    display: flex;
+    height: 1700px;
+    justify-content: center;
+    margin: auto;
+    margin-top:7%;
+    width: 90%;
+    transition: height 0.5s ease-in-out;
+}
+.history_body_left_side{
+    border-right: 4px solid black;
+    flex: 1;
+    margin: 5px;
+    padding: 4px 8px 8px;
+}
+.history_body_right_side {
+    flex: 1;
+    margin: 5px;
+    padding: 4px 8px 8px;
+    padding-left: 0px;
+}
+.body_container_head {
+    padding: 10px;
+}
+
+.body_container_body {
+    height: 97%;
+}
+.slide{
+    /*background-color:white;*/
+    justify-content: center;
+    margin:10px;
+    height: 505px;
+}
+.rightslide{
+    /*background-color:white;*/
+    justify-content: center;
+    margin:10px;
+    height: 505px;
+}
+/*#addSlideButton {
+    margin: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}*/
+#Slide1,#Slide2,#Slide3{
+    color:black;
+    font-size: large;
+    border: 2px solid black;
+    padding:10px;
+}
+.slide p,.rightslide p{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 300px;
+}
+
+/* History Page Footer */
+
+/* Check the Home page CSS file */

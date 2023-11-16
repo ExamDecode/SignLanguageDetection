@@ -85,7 +85,7 @@ body {
     padding-left: 20px;  
 }
 input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 1000px rgb(203, 253, 217) inset; /* Set the background color */
+    -webkit-box-shadow: 0 0 0 1000px rgb(203, 253, 217) inset; /*  Set the background color */
     -webkit-text-fill-color:  black !important;
   }
 .input-box_1 input::placeholder{

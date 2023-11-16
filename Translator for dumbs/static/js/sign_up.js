@@ -14,7 +14,7 @@ showPassword_2.addEventListener("click",()=>{
 });*/
 
 
-//form submit
+// form submit
 const form = document.querySelector('#create-account-form');
 const usernameInput = document.querySelector('#username_2');
 const emailInput = document.querySelector('#email');
