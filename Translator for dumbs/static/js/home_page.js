@@ -1,17 +1,35 @@
 /////  Menu Slider  /////
 
-document
-  .getElementById("library_menu_icon")
-  .addEventListener("click", function () {
-    document.getElementById("home_page_menuSlider").style.left = "0";
-  });
+const menuButton = document.getElementById("library_menu_icon");
+const slider = document.getElementById("home_page_menuSlider");
+const closeBtn = document.getElementById("home_page_closeMenu");
 
-document
-  .getElementById("home_page_closeMenu")
-  .addEventListener("click", function () {
-    document.getElementById("home_page_menuSlider").style.left = "-180px";
-    document.getElementById("library_menu_icon").style.display = "block";
-  });
+function toggleSlider() {
+  slider.style.display =
+    slider.style.display === "none" || slider.style.display === ""
+      ? (slider.style.left = "0")
+      : "none";
+}
+
+// Event listener for the menu button
+menuButton.addEventListener("click", toggleSlider);
+
+closeBtn.addEventListener("click", function () {
+  slider.style.left = "-180px";
+  menuButton.style.display = "block";
+});
+
+// Event listener to close the slider if clicked outside the menu/slider area
+
+document.addEventListener("click", function (event) {
+  const isClickInsideMenu = menuButton.contains(event.target);
+  const isClickInsideSlider = slider.contains(event.target);
+
+  if (!isClickInsideMenu && !isClickInsideSlider) {
+    slider.style.left = "-180px";
+    menuButton.style.display = "block";
+  }
+});
 
 /////  Upload Media  /////
 
@@ -122,6 +140,11 @@ function checkVideoDimensions(file) {
   });
 }
 
+function submitForm() {
+  // Add your logic to handle form submission here
+  alert("Form submitted!");
+}
+
 /////  Remove Media  /////
 
 function removeMedia() {
@@ -133,8 +156,8 @@ function removeMedia() {
 
   // Hide the remove button and show the upload buttons
   document.getElementById("upload_media_removeBtn").style.display = "none";
-  uploadVideoBtn.style.display = "block";
-  uploadImageBtn.style.display = "block";
+  uploadVideoBtn.style.display = "flex";
+  uploadImageBtn.style.display = "flex";
 
   // Hide the media box
   body_container_body_left_side_mediaBox.style.display = "none";
