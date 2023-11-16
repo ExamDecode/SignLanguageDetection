@@ -41,7 +41,10 @@
 
         <!-- /////  Menu Slider  /////-->
         <div class="home_page_slider_contents">
-          <a href="#"> <i class="fa-solid fa-user"></i> USER</a>
+          <a href="home_page.html"> <i class="fa-solid fa-house"></i> HOME </a>
+          <a href="user.html" style="letter-spacing: 1px">
+            <i class="fa-solid fa-user"></i> USER</a
+          >
           <a href="library.html"> <i class="fa-solid fa-book"></i> LIBRARY</a>
           <a href="#"> <i class="fa-solid fa-clock-rotate-left"></i> HISTORY</a>
           <a href="#">
@@ -70,25 +73,31 @@
       <div class="home_page_body_left_side">
         <div class="body_container_head">UPLOAD YOUR MEDIA</div>
 
-        <div class="body_container_body" id="body_container_body_left_side">
+        <div class="body_container_body" id="body_container_body_left_side_img">
           <!-- /////  Upload Video  /////-->
-          <button id="uploadVideoBtn" onclick="uploadMedia('video')">
-            Upload Video
-          </button>
 
-          <!-- /////  Upload Image  /////-->
-          <button id="uploadImageBtn" onclick="uploadMedia('image')">
-            Upload Image
-          </button>
+          <form action="#" class="home_page_form">
+            <label id="uploadVideoBtn" onclick="uploadMedia('video')">
+              Upload Video
+            </label>
 
-          <div id="body_container_body_left_side_mediaBox">
-            <!-- /////  Remove Media  /////-->
-            <button id="upload_media_removeBtn" onclick="removeMedia()">
-              Remove
-            </button>
-            <button id="upload_media_submitBtn">Submit</button>
-            <div id="body_container_body_left_side_mediaDisplay"></div>
-          </div>
+            <!-- /////  Upload Image  /////-->
+            <label id="uploadImageBtn" onclick="uploadMedia('image')">
+              Upload Image
+            </label>
+
+            <div id="body_container_body_left_side_mediaBox">
+              <!-- /////  Remove Media  /////-->
+
+              <button id="upload_media_removeBtn" onclick="removeMedia()">
+                Remove
+              </button>
+              <button id="upload_media_submitBtn" onclick="submitForm()">
+                Submit
+              </button>
+              <div id="body_container_body_left_side_mediaDisplay"></div>
+            </div>
+          </form>
         </div>
       </div>
 
