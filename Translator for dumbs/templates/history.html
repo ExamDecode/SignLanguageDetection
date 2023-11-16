@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Language Detection</title>
+
+    <!-- ********************  CSS  ******************** -->
+
+    <link rel="stylesheet" href="../static/css/home_page.css" />
+    <link rel="stylesheet" href="../static/css/history.css" />
+
+    <!-- ********************  Fonts  ******************** -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+    <!-- ********************  Favicon  ******************** -->
+
+    <link rel="icon" href="../static/images/favicon.ico" />
+  </head>
+
+    <!-- Home Page Header -->
+
+    <div id="history_page_header">
+      <div id="library_menu_icon" class="menu-library-icon">
+        <button class="home_page_header_buttons">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- /////  Hover Menu Text  /////-->
+        <div id="library_menu_tooltrip">MENU</div>
+      </div>
+
+      <div id="home_page_menuSlider">
+        <div id="home_page_closeMenu">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <!-- /////  Menu Slider  /////-->
+        <div class="home_page_slider_contents">
+          <a href="user.html"> <i class="fa-solid fa-user"></i> USER</a>
+          <a href="home_page.html"> <i class="fa-solid fa-house"></i> HOME </a>
+          <a href="library.html"> <i class="fa-solid fa-book"></i> LIBRARY</a>
+          <a href="#"> <i class="fa-solid fa-clock-rotate-left"></i> HISTORY</a>
+          <a href="#">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i> LOG OUT</a
+          >
+        </div>
+      </div>
+
+      <h1>HISTORY </h1>
+
+      <div class="menu-library-icon">
+        <a href="home_page.html">
+          <button class="home_page_header_buttons">
+            <i class="fa-solid fa-house"></i></button
+        ></a>
+
+        <!-- /////  Hover Home Text  /////-->
+        <div id="library_menu_tooltrip" style="color: #94b9ff">HOME</div>
+      </div>
+    </div>
+
+
+
+    <!-- History Page Body -->
+
+    <div id="history_page_body">
+      <!--------------Left side-->
+      <div class="history_body_left_side">
+
+        <!-------Left--Heading-->
+        <div class="body_container_head">UPLOADED MEDIA</div>
+
+        <!--------Left Body------>
+        <div class="body_container_body" id="left_side_body">
+            <div class="slide" id="Slide1">
+              <p>Uploaded Image/Video </p></div>
+            <div class="slide" id="Slide2">
+              <p>Uploaded Image/Video</p> </div>
+            <div class="slide" id="Slide3"> 
+              <p>Uploaded Image/Video</p></div>
+            <!--<button id="addSlideButton">Add Slide</button>-->
+        </div>
+      </div>
+
+      <!--------------Right side-->
+      <div class="history_body_right_side">
+
+        <!-------RIght--Heading-->
+        <div class="body_container_head">OUTPUT</div>
+
+        <!--------Right-- Body------>
+        <div class="body_container_body" id="right_side_body">
+            <div class="rightslide" id="Slide1">
+              <p>Output1</p></div>
+            <div class="rightslide" id="Slide2">
+              <p>Output2</p></div>
+            <div class="rightslide" id="Slide3">
+              <p>Output3</p></div>
+        </div>
+      </div>
+    
+    </div>
+      <!----
+        <div class="history_page_body_right_side">
+          <div class="body_container_head">GET YOUR RESULT!</div>
+          
+          <div class="column" id="slider_container_body_right_side">
+              <p class="body_container_body_result">OUTPUT DATA</p>
+          </div>
+        </div>
+    </div>--->
+
+    <!-- Home Page Footer -->
+
+    <div class="home_page_footer">
+        <p>&copy; 2023 EXAM DECODE. All rights reserved.</p>
+    </div>
+  
+<!-- ********************  JS  ******************** -->
+
+        <script src="../static/js/home_page.js"></script>
+        <script src="../static/js/history.js"></script>
+    </body>
+</html>
