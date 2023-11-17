@@ -160,6 +160,16 @@ body {
             rgba(2, 8, 33, 0.427)),
         url("../images/SLD_image.jpg") no-repeat;
 
+    height: 480px;
+
+}
+
+.upload_section {
+    margin-top: 15px;
+}
+
+input[type="file"] {
+    display: none;
 }
 
 #uploadVideoBtn,
@@ -173,7 +183,7 @@ body {
     font-size: 20px;
     font-family: 'Righteous', cursive;
     justify-content: center;
-    margin: 130px auto;
+    margin: 1px auto;
     padding: 10px 20px;
     width: 30%;
 }
