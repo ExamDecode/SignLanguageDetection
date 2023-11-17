@@ -33,6 +33,24 @@ document.addEventListener("click", function (event) {
 
 /////  Upload Media  /////
 
+// function displayMedia() {
+//   var fileInput = document.getElementById("fileInput");
+//   var selectedMedia = document.getElementById("user_uploaded_image");
+
+//   var file = fileInput.files[0];
+//   var reader = new FileReader();
+
+//   reader.onload = function (e) {
+//     selectedMedia.src = e.target.result;
+//   };
+
+//   if (file) {
+//     reader.readAsDataURL(file);
+//   } else {
+//     selectedMedia.src = "../static/images/user.png";
+//   }
+// }
+
 function uploadMedia(type) {
   var input = document.createElement("input");
   input.type = "file";
@@ -142,7 +160,12 @@ function checkVideoDimensions(file) {
 
 function submitForm() {
   // Add your logic to handle form submission here
+  var image = document.getElementById("fileInput").value;
   alert("Form submitted!");
+
+  console.log("Submitted Data:", {
+    image: image,
+  });
 }
 
 /////  Remove Media  /////

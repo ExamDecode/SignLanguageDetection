@@ -72,7 +72,13 @@
 
     <div id="home_page_body">
       <!-- /////  Upload Image  /////-->
-      <form action="#" id="user_profile_form" class="user_form">
+      <form
+        action="/user"
+        id="user_profile_form"
+        class="user_form"
+        method="POST"
+        enctype="multipart/form-data"
+      >
         <div id="user_image_upload">
           <div id="user_image_container">
             <img
@@ -82,6 +88,7 @@
             />
 
             <input
+              name="image"
               type="file"
               id="fileInput"
               accept="image/*"
@@ -100,19 +107,28 @@
 
         <div id="user_user-details">
           <input
+            name="firstName"
             type="text"
             placeholder="First Name"
             id="firstName"
             class="details"
           />
           <input
+            name="lastName"
             type="text"
             placeholder="Last Name"
             id="lastName"
             class="details"
           />
-          <input type="email" placeholder="Email" id="email" class="details" />
           <input
+            name="email"
+            type="email"
+            placeholder="Email"
+            id="email"
+            class="details"
+          />
+          <input
+            name="phoneNumber"
             type="tel"
             placeholder="Phone Number"
             id="phoneNumber"
@@ -121,6 +137,7 @@
             oninput="this.value=this.value.replace(/[^0-9]/g,'')"
           />
           <textarea
+            name="bio"
             style="resize: none"
             placeholder="Bio"
             cols="num"

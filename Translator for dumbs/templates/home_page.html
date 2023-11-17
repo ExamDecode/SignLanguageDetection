@@ -72,33 +72,58 @@
       <!-- /////  Upload Section  /////-->
       <div class="home_page_body_left_side">
         <div class="body_container_head">UPLOAD YOUR MEDIA</div>
-
-        <div class="body_container_body" id="body_container_body_left_side_img">
-          <!-- /////  Upload Video  /////-->
-
-          <form action="#" class="home_page_form">
-            <label id="uploadVideoBtn" onclick="uploadMedia('video')">
-              Upload Video
-            </label>
-
-            <!-- /////  Upload Image  /////-->
-            <label id="uploadImageBtn" onclick="uploadMedia('image')">
-              Upload Image
-            </label>
-
+        <form action="#" class="home_page_form">
+          <div
+            class="body_container_body"
+            id="body_container_body_left_side_img"
+          >
             <div id="body_container_body_left_side_mediaBox">
               <!-- /////  Remove Media  /////-->
 
               <button id="upload_media_removeBtn" onclick="removeMedia()">
                 Remove
               </button>
+
+              <!-- /////  Submit Media  /////-->
               <button id="upload_media_submitBtn" onclick="submitForm()">
                 Submit
               </button>
               <div id="body_container_body_left_side_mediaDisplay"></div>
             </div>
-          </form>
-        </div>
+
+            <!-- /////  Upload Video  /////-->
+
+            <video src="#" alt=""></video>
+
+            <input name="video" type="file" id="fileInput" accept="video/*" />
+
+            <div class="upload_section">
+              <label id="uploadVideoBtn" onclick="uploadMedia('video')">
+                Upload Video
+              </label>
+            </div>
+
+            <!-- /////  Upload Image  /////-->
+
+            <img src="#" alt="" />
+
+            <input name="image" type="file" id="fileInput" accept="image/*" />
+
+            <div>
+              <label id="uploadImageBtn" onclick="uploadMedia('image')">
+                Upload Image
+              </label>
+            </div>
+
+            <!-- <label id="uploadVideoBtn" onclick="uploadMedia('video')">
+              Upload Video
+            </label>
+
+            <label id="uploadImageBtn" onclick="uploadMedia('image')">
+              Upload Image
+            </label> -->
+          </div>
+        </form>
       </div>
 
       <!-- /////  Result Section  /////-->
