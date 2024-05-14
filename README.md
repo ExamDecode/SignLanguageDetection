@@ -18,3 +18,22 @@ System requirement to run this program:
    
 6. Finally run this command in command prompt:
    - python app.py
+
+
+Front-End live - (Till Now)
+
+Home Page -
+
+![Screenshot 2024-05-14 223339](https://github.com/ExamDecode/SignLanguageDetection/assets/114896796/109fa398-75a4-4414-83b6-8062583f03d1)
+
+Library Page -
+
+![Screenshot 2024-05-14 223401](https://github.com/ExamDecode/SignLanguageDetection/assets/114896796/bc6c636f-f797-49ad-91fb-59ebb0c2f77f)
+
+User Page -
+
+![Screenshot 2024-05-14 223423](https://github.com/ExamDecode/SignLanguageDetection/assets/114896796/d2776600-ea60-4b8e-9cf9-a471dd6c4c68)
+
+
+
+
